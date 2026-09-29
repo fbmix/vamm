@@ -418,4 +418,4 @@ class Models:
         npt.ndarray
             The probabilities per data point.
         """
-        return np.exp(self.log_prob(X, indices.astype(np.uint64)))
+        return np.exp(self.log_prob(X, indices))
