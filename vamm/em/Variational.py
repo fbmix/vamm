@@ -534,7 +534,7 @@ class Variational:
         indices: npt.ndarray
             An array containing the indices of the components.
         """
-        return self._cpp.indices
+        return self._cpp.indices()
 
     def q_shrinked(self, mask):
         """
