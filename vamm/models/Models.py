@@ -177,7 +177,7 @@ class Models:
         log : pd.DataFrame
             a DataFrame with training history.
         """
-        self.em = em
+        self.em = em or self.em
         X = check_X(self.C, self.D, X, check_C=True, dtype=self.dtype)
         indices = self._initialize(X=X, indices=indices, rng=rng, verbose=verbose)
         if indices is not None:
